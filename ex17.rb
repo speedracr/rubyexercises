@@ -9,8 +9,7 @@ end
 puts "Ready to copy?"
 $stdin.gets
 
-out_file = open(to_file, 'w')
-out_file.write(indata)
+open(to_file, 'w').write(indata)
 puts "Done!"
-
-out_file.close
+puts "#{to_file.class} is the to_file class"
+puts "#{from_file.class} is the from_file class"
