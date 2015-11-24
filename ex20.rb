@@ -9,6 +9,7 @@ def rewind(f)
 end
 
 def print_a_line(line_count, f)
+  # call the file one line at a time via chomp
   puts "#{line_count}, #{f.gets.chomp}"
 end
 
